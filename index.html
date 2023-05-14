@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Расход материалов для жгутов и кабелей</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link href="adaptiveStyle.css" rel="stylesheet" type="text/css" />
+    <link rel="shortcut icon" href="assets/icons/favicon.png" type="">
+  </head>
+  <body>
+
+    <section>
+      <div class="main">
+        <div class="title">
+          <p>Расход материалов для жгутов и кабелей</p>
+        </div>
+
+        <div class="inp black">
+          <p>Количество бирок <span>&nbsp;черного&nbsp;</span>цвета, шт</p>
+          <div><input type="number" name="" id="black" class="inp1" placeholder="000"></div>
+        </div>
+
+        <div class="inp white">
+          <p>Количество бирок <span>&nbsp;белого&nbsp;</span>цвета, шт</p>
+          <div><input type="number" name="" id="white" class="inp2" placeholder="000"></div>
+        </div>
+
+        <div class="inp solder">
+          <p>Количество <span>&nbsp;паек&nbsp;</span>, шт</p>
+          <div><input type="number" name="" id="solder" class="inp3" placeholder="000"></div>
+        </div>
+
+        <div class="inp talc">
+          <p><span>Тальк&nbsp;</span> (вводить длину кабеля, м) </p>
+          <div><input type="text" name="" id="talc" class="inp4" placeholder="000"></div>
+        </div>
+
+        <div class="buttonCalculte">
+          <img src="assets/icons/calc.svg" alt="">
+          <div class="p">Рассчитать</div>
+        </div>
+
+        <div class="buttonCancel">
+          <img src="assets/icons/cancel.svg" alt="">
+          <div class="p">Сбросить</div>
+        </div>
+
+        <div class="result">
+          <div class="resultText">
+            <div class="marshrut"></div>
+            <div class="resBlack">Маркер черный, шт.</div>
+            <div class="res resBlackNum"></div>
+            <div class="resWhite">Маркер белый, шт.</div>
+            <div class="res resWhiteNum"></div>
+            <div class="resSiM">Смазка Si - M, кг</div>
+            <div class="res resSiMNum"></div>
+            <div class="resPripoy">Припой, кг</div>
+            <div class="res resPripoyNum"></div>
+            <div class="resKanif">Канифоль, л</div>
+            <div class="res resKanifNum"></div>
+            <div class="resSpirt">Спирт, л</div>
+            <div class="res resSpirtNum"></div>
+            <div class="resNefr">Нефрас, л</div>
+            <div class="res resNefrNum"></div>
+            <div class="resTalc">Тальк, кг</div>
+            <div class="res resTalcNum"></div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+
+
+    <script src="script.js"></script>
+  </body>
+</html>

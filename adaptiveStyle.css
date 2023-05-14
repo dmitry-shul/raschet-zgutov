@@ -1,0 +1,56 @@
+/*@media screen and (max-height: 950px) {
+	.main {
+		grid-template-rows: 120px 70px 60px 60px 60px 80px 260px;
+		grid-row-gap: 8px;
+	}
+
+	.inp {
+		height: 48px;
+	}
+
+	.inp p {
+		height: 48px;
+	}
+
+	.inp div {
+		height: 48px;
+	}
+
+	.inp input {
+		height: 48px;
+	}
+
+	.buttonCalculte,
+	.buttonCancel {
+		height: 80px;
+	}
+}*/
+
+@media screen and (max-height: 950px) {
+
+	section {
+		width: 1100px;
+	}
+
+	.main {
+		grid-template-areas: 
+		'title title result'
+		'zblack zblack result'
+		'zwhite zwhite result'
+		'solder solder result'
+		'talc talc result'
+		'calc cancel result';
+		grid-template-columns: 280px 280px 440px;
+		grid-template-rows: 120px 70px 60px 60px 60px 100px;
+		grid-column-gap: 30px;
+	}
+
+	.result {
+		width: 440px;
+	}
+	
+	.buttonCancel {
+		float: right;
+	}
+
+}
