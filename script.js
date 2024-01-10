@@ -12,6 +12,7 @@ function calc() {
   const inpBlackNum = document.querySelector('.resBlackNum')
   const resWhiteNum = document.querySelector('.resWhiteNum')
   const resSiMNum = document.querySelector('.resSiMNum')
+  const resProvNum = document.querySelector('.resProvNum')
   const resPripoyNum = document.querySelector('.resPripoyNum')
   const resKanifNum = document.querySelector('.resKanifNum')
   const resSpirtNum = document.querySelector('.resSpirtNum')
@@ -32,6 +33,11 @@ function calc() {
   if (inpWhite !== '' && inpWhite !== 0) {
     resSiMNum.innerText = `${0.0001}`;
   }
+	resProvNum.innerText = "0";
+	if (inpBlack !== 0 || inpWhite !== 0 || solder !== 0 || talc !== "") {
+		resProvNum.innerText = `${0.0005}`;
+	}
+	console.log(inpBlack, inpWhite, solder, talc)
   resPripoyNum.innerText = `${Math.round(solder*0.0003*1000000000)/1000000000}`;
   resKanifNum.innerText = `${Math.round(0.00006*100000000000*solder)/100000000000}`;
   resSpirtNum.innerText = `${Math.round((((inpBlack + inpWhite)*0.00001)/2 + (solder*0.0004)/2 + solder*0.00015)*1000000000)/1000000000}`;
@@ -150,6 +156,7 @@ function cancel() {
   document.querySelector('.resBlackNum').innerText = '';
   document.querySelector('.resWhiteNum').innerText = '';
   document.querySelector('.resSiMNum').innerText = '';
+  document.querySelector('.resProvNum').innerText = '';
   document.querySelector('.resPripoyNum').innerText = '';
   document.querySelector('.resKanifNum').innerText = '';
   document.querySelector('.resSpirtNum').innerText = '';
