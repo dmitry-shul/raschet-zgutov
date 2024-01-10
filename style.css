@@ -208,7 +208,7 @@ input[type=number]::-webkit-outer-spin-button {
 .result {
   grid-area: result;
   width: 600px;
-  height: 260px;
+  height: 280px;
   background: #3A3A3A;
   border-radius: 10px;
   display: flex;
@@ -218,7 +218,7 @@ input[type=number]::-webkit-outer-spin-button {
 
 .resultText {
   width: 406px;
-  height: 223px;
+  height: 250px;
   font-family: Roboto;
   font-style: normal;
   font-weight: normal;
@@ -227,8 +227,8 @@ input[type=number]::-webkit-outer-spin-button {
   display: flex;
   align-items: center;
   display: grid;
-  grid-template-columns: 10px 190px 190px 10px;
-  grid-template-rows: 23px 23px 23px 23px 23px 23px 23px 23px 23px;
+  grid-template-columns: 10px 240px 140px 10px;
+  grid-template-rows: 23px 23px 23px 23px 23px 23px 23px 23px 23px 23px;
   grid-template-areas: 
   '. marshrut marshrut .'
   '. resBlack resBlackNum .'
@@ -238,7 +238,8 @@ input[type=number]::-webkit-outer-spin-button {
   '. resKanif resKanifNum .'
   '. resSpirt resSpirtNum .'
   '. resNefr resNefrNum .'
-  '. resTalc resTalcNum .';
+  '. resTalc resTalcNum .'
+	'. resProv resProvNum .';
   grid-gap: 2px;
 }
 
@@ -481,7 +482,6 @@ input[type=number]::-webkit-outer-spin-button {
   align-items: center;
   color: #000000;
   padding: 0 10px;
-  border-radius: 0 0 0 10px;
 }
 
 .resTalcNum {
@@ -497,7 +497,38 @@ input[type=number]::-webkit-outer-spin-button {
   align-items: center;
   color: #000000;
   padding: 0 10px;
-  border-radius: 0 0 10px 0;
+}
+
+.resProv {
+	height: 23px;
+	grid-area: resProv;
+	background: var(--result);
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 18px;
+	line-height: 0px;
+	display: flex;
+	align-items: center;
+	color: #000000;
+	padding: 0 10px;
+	border-radius: 0 0 0 10px;
+}
+
+.resProvNum {
+	height: 23px;
+	grid-area: resProvNum;
+	background: var(--result);
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 18px;
+	line-height: 0px;
+	display: flex;
+	align-items: center;
+	color: #000000;
+	padding: 0 10px;
+	border-radius: 0 0 10px 0;
 }
 
 .hidden {
