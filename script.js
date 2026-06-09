@@ -22,10 +22,10 @@ function calc() {
   if(inpBlack == '' && inpWhite == '' && solder == '' && talc == '') {
     marshrut.innerText = 'Введите данные';
   } else {
-    marshrut.innerText = '335 (8502, 0190, 0186) ПС 335';
+    marshrut.innerText = '335 (8502, 0190, 0186, 8891) ПС 335';
   }
   if (solder !== '' && solder !== 0) {
-    marshrut.innerText = '335 (8502, 8000, 0190, 0186) ПС 335';
+    marshrut.innerText = '335 (8502, 8000, 0190, 0186, 8891) ПС 335';
   }
   inpBlackNum.innerText = `${Math.round((inpBlack + inpWhite)*0.002*1000000000)/1000000000}`;
   resWhiteNum.innerText = `${Math.round((inpWhite*0.002)*1000000000)/1000000000}`;
